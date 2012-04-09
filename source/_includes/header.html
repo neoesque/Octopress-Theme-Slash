@@ -1,4 +1,7 @@
 <h1 class="left"><a href="{{ root_url }}/">{{ site.title }}</a></h1>
+{% if site.subtitle %}
+    <h2 class="left subtitle">{{ site.subtitle }}</h2>
+{% endif %}
 <nav class="menu left">{% include navigation.html %}</nav>
 <div class="right">
 	<form class="search right" action="{{ site.simple_search }}" method="get">
